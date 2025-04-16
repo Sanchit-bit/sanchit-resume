@@ -245,6 +245,40 @@ body {
   background-color: #d3e3fd;
   transform: translateY(-5px);
 }
+@media only screen and (max-width: 600px) {
+  .tech-skills {
+    font-size: 14px; /* ya jitna thoda chhota chahiye */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .tech-skills h2 {
+    font-size: 18px;
+  }
+
+  .tech-skills ul {
+    padding-left: 0;
+    font-size: 14px;
+  }
+
+  .tech-skills li {
+    margin-bottom: 5px;
+  }
+}
+
+/* Initial state for hidden sections */
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Visible state when the section is revealed */
+.section.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 #contact {
     padding: 60px 20px;
     text-align: center;
